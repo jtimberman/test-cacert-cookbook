@@ -12,7 +12,7 @@ platforms:
 - name: centos-6.6
 
 suites:
-- name: distro-cacert
+- name: default
   run_list:
     - recipe[test-cacert]
 
