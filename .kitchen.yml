@@ -1,0 +1,22 @@
+driver:
+  name: vagrant
+  customize:
+    memory: 1024
+    cpus: 2
+
+provisioner:
+  name: chef_zero
+
+platforms:
+- name: centos-5.11
+- name: centos-6.6
+
+suites:
+- name: distro-cacert
+  run_list:
+    - recipe[test-cacert]
+
+- name: updated-cacert
+  run_list:
+    - recipe[test-cacert]
+    - recipe[test-cacert::update]

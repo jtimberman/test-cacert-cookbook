@@ -1,0 +1,5 @@
+name              'test-cacert'
+maintainer        'Joshua Timberman'
+maintainer_email  'joshua@chef.io'
+license           'Apache 2.0'
+version           '1.0.0'
