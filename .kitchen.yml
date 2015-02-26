@@ -20,3 +20,8 @@ suites:
   run_list:
     - recipe[test-cacert]
     - recipe[test-cacert::update]
+
+- name: older-cacert
+  run_list:
+    - recipe[test-cacert]
+    - recipe[test-cacert::older-cacert]
